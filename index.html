@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BTC Liquidation Heatmap</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 2000px;
+    height: 2000px;
+    overflow: hidden;
+    background: black;
+}
+
+#frame {
+    width: 2000px;
+    height: 2000px;
+    border: none;
+}
+</style>
+
+<script>
+setInterval(function(){
+    document.getElementById("frame").src = document.getElementById("frame").src;
+}, 60000);
+</script>
+
+</head>
+
+<body>
+
+<iframe
+id="frame"
+src="https://www.coinglass.com/pro/futures/LiquidationHeatMapNew?coin=BTC&type=symbol">
+</iframe>
+
+</body>
+</html>
